@@ -27,7 +27,7 @@ namespace SuperPanel.App
         {
             // Uncomment to generate new batch of bogus data
             // GenerateFakeData();
-
+            services.AddMvc();
             services.AddControllersWithViews();
             services.AddOptions();
             services.Configure<DataOptions>(options => Configuration.GetSection("Data").Bind(options));
