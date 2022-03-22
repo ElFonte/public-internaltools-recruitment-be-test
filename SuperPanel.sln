@@ -10,7 +10,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExternalContacts.Api", "Ext
 		{A96C11E0-894C-4DD6-819C-5F112468335E} = {A96C11E0-894C-4DD6-819C-5F112468335E}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperPanel.Tests", "SuperPanel.Tests\SuperPanel.Tests.csproj", "{845C00DF-3418-4566-8F17-1E3D917E6866}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperPanel.Tests", "SuperPanel.Tests\SuperPanel.Tests.csproj", "{845C00DF-3418-4566-8F17-1E3D917E6866}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

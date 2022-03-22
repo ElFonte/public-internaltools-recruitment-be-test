@@ -1,0 +1,33 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+
+
+    @{
+    ViewData["Title"] = "User's list";
+    }
+
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Created at</th>
+        </tr>
+    </thead>
+    @foreach (var u in ViewBag.UserView)
+    {
+    <tr>
+        <td>@u.Id</td>
+        <td>@u.FirstName @u.LastName</td>
+        <td>@u.Email</td>
+        <td>@u.CreatedAt</td>
+        <td><a asp-action="GDPR" asp-route-id="@u.Id" class="btn btn-primary">GDPR</a></td>
+    </tr>
+    }
+</table>
+    @Html.PagedListPager((IPagedList)ViewBag.UserView, page => Url.Action("index","Index", new {page = page}))
+
+
